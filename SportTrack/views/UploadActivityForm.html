@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+  <title>Ajout d'activite</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+
+    <h1> Ajouter une activité </h1>
+
+	<form action="/m3104_33/index.php?page=upload_activity_form" method="POST">
+	
+    <p> Numéro :
+    <input type="number" id="idActivite" name="idActivite" required />
+    </p>
+
+    <p> Heure début :
+    <input type="time" id="heureDebut" name="heureDebut" required />
+    </p>
+
+    <p> Heure fin:
+    <input type="time" id="heureFin" name="heureFin" required />
+    </p>
+
+    <p> Date :
+      <input type="date" id="date" name="date" required />
+    </p>
+
+    <p> Description :
+      <input type="text" id="description" name ="descritpion"required>
+    </p>
+
+    <p> <input type=submit value="Confirmer la saisie et envoyer le formulaire"> </p>
+    
+	
+	
+	
+	</form>	
+
+  </body>
+</html> 
