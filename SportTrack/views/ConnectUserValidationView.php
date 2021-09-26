@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
       <meta charset="utf-8">
-      <title>Inscription validée !</title>
+      <title>Connection validée !</title>
       <link rel="stylesheet" href="./views/style.css" type="text/css">
 </head>
 <body>

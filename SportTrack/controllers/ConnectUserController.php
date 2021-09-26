@@ -1,7 +1,7 @@
 <?php
 require('Controller.php');
-require('./model/Compte.php');
-require('./model/CompteDAO.php');
+require('../model/Compte.php');
+require('../model/CompteDAO.php');
 
 class ConnectUserController implements Controller {
       public function handle($request) {

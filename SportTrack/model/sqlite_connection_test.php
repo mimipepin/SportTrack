@@ -157,10 +157,15 @@
 
       //test pour le controller d'ajout d'utilisateur
 
-
+      echo "heeey saluuut";
       $user = $compteDao->findUser("AloeVera@kaz.bzh", "mdp");
       var_dump($user);
       echo isset($user);
+
+      echo "heeey saluuut";
+      $user2 = $compteDao->findUser("JeanMi@dejece.bzh", "mdp");
+      #var_dump($user2);
+      echo $user2 != null;
 
 
       //echo isset($compteDao->findUser("AloeVera@kaz.bzh", "mdpxec"));

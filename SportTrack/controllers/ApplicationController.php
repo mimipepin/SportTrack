@@ -9,11 +9,10 @@ class ApplicationController{
             '/' => ['controller'=>'MainController', 'view'=>'MainView'],
             'error' => ['controller'=>null, 'view'=>'ErrorView'],
             'user_add' => ['controller'=>'AddUserController', 'view'=>'AddUserValidationView'],
-            'user_connect' => ['controller'=> 'ConnectUserController',
-            'view'=> 'ConnectUserValidationView' ],
+            'user_connect' => ['controller'=> 'ConnectUserController','view'=> 'ConnectUserValidationView'],
             'user_disconnect' => ['controller'=> 'DisconnectUserController' ,'view'=> 'DisconnectUserVue'],
             'upload_activity' => ['controller'=> 'UploadActivityController','view'=> null],
-            'list_activities' => ['controller'=> 'ListActivityController','view'=> 'ListActivityView' ],
+            'list_activities' => ['controller'=> 'ListActivityController','view'=> 'ListActivityView'],
             'user_connect_form'=>['controller'=>null, 'view'=>'ConnectUserForm'],
             'user_add_form'=>['controller'=> null, 'view' => 'AddUserForm'],
             'user_connect_form'=>['controller'=> null, 'view'=>'ConnectUserForm']

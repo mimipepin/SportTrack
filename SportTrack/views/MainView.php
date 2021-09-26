@@ -7,15 +7,20 @@
       <body>
 
 		<?php
-			session_start();
+                  
 			if (isset($_SESSION['user'])){
 				echo "Bienvenue, " . $_SESSION['name'] . "!";
+                        echo "<input type=button value='Se déconnecter' onclick=\"window.location.href = 'index.php?page=user_disconnect'\">";
 			} else {
 				echo "Veuillez vous connecter pour accéder à cette page";
+                        echo "<input type=button value='Se connecter' onclick=\"window.location.href = 'index.php?page=user_connect_form'\">";
+                        echo "<input type=button value='Créer un compte' onclick=\"window.location.href = 'index.php?page=user_add_form'\">";
 			}
 			?>
-		<input type=button value="Creer un compte" onclick="window.location.href = 'http://m3104.iut-info-vannes.net/m3104_33/index.php?page=user_add_form'">
+	      <!--<input type=button value="Creer un compte" onclick="window.location.href = 'http://m3104.iut-info-vannes.net/m3104_33/index.php?page=user_add_form'">
 		<input type=button value="Se connecter" onclick="window.location.href = 'http://m3104.iut-info-vannes.net/m3104_33/index.php?page=user_connect_form'">
-		
+            <input type=button value="Creer un compte" onclick="window.location.href = ".dirname(__FILE__). "/../index.php?page=user_add_form"> -->
+
+
       </body>
       </html>

@@ -86,7 +86,7 @@ class CompteDAO {
              * param : $password the password of the user
       	 * return : the selected user
       	 */
-      	public function findUser($email, $password){
+      	/*public function findUser($email, $password){
 			$dbc = SqliteConnection::getInstance()->getConnection();
 
 			//On récupère ici toutes les Activités liées au compte
@@ -101,6 +101,23 @@ class CompteDAO {
 			$ret = $stmt->fetchALL(PDO::FETCH_CLASS, "Compte");
 
 			return $ret;
-      	}
+      	}*/
+            public function findUser($email, $password){
+			$dbc = SqliteConnection::getInstance()->getConnection();
+
+			//On récupère ici toutes les Activités liées au compte
+			//identifié par son mail
+			$query = "select * from Compte where mail = :mail and mdp = :password";
+			$stmt = $dbc->prepare($query);
+                  $stmt->bindValue(':mail', $email);
+                  $stmt->bindValue(':password', $password);
+			$stmt->execute();
+			//On met dans un tableau tous les objets de type Activite
+			//stockés dans $stmt
+			$ret = $stmt->fetchObject('Compte');
+
+			return $ret;
+            }
+
       }
       ?>
