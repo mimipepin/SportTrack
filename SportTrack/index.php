@@ -5,14 +5,14 @@ require_once ('controllers/ApplicationController.php');
 
 $controller = ApplicationController::getInstance()->getController($_REQUEST);
 if($controller != null){
-      echo $controller
+      #echo $controller
       include "controllers/$controller.php";
       (new $controller())->handle($_REQUEST);
 }
 
 $view = ApplicationController::getInstance()->getView($_REQUEST);
 if($view != null){
-      echo $view;
+      #echo $view;
       include __DIR__."/views/$view.php";
 }
 

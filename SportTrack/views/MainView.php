@@ -2,12 +2,12 @@
 <html lang="fr">
       <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="style.css" type="text/css">
+      <link rel="stylesheet" href="./views/style.css" type="text/css">
       </head>
       <body>
 
 		<?php
-                  
+
 			if (isset($_SESSION['user'])){
 				echo "Bienvenue, " . $_SESSION['name'] . "!";
                         echo "<input type=button value='Se déconnecter' onclick=\"window.location.href = 'index.php?page=user_disconnect'\">";

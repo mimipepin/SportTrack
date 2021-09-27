@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>Connexion</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="./views/style.css" type="text/css">
 </head>
 <body>
 	<h1>Page de connexion</h1>
-	<form action="/m3104_33/index.php?page=user_connect" method="POST">
+	<form action="index.php?page=user_connect" method="POST">
 		<p>
 		<label for="email">Email</label>
-		<input type="email" id="email" required> </br>
+		<input type="email" id="email" name="email_addr" required> </br>
 		</p>
-		
+
 		<p>
 		<label for="password">Mot de passe</label>
-		<input type="password" id="password" required> </br>
+		<input type="password" id="password" name = "password" required> </br>
 		</p>
-		
-		<input type="submit" value="Connexion">
+
+		<input type=submit value="Connexion">
 	</form>
 </body>
 </html>
