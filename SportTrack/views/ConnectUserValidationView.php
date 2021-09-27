@@ -9,7 +9,11 @@
       <?php
 
       if (isset($_SESSION['user']) && $_SESSION['user'] == true) {
-            echo "Bienvenue, " . $_SESSION['name'] . "!";
+            echo "Bienvenue, " . $_SESSION['surname'] . "!";
+            echo "<br />";
+            echo "<input type=button value='Revenir à la page principale' onclick=\"window.location.href = 'index.php?page=/'\">";
+            echo "<br />";
+            echo "<input type=button value='Voir les activités' onclick=\"window.location.href = 'index.php?page=list_activities'\">";
       } else {
             echo "Veuillez vous connecter pour accéder à cette page";
       }

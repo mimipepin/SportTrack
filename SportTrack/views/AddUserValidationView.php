@@ -9,7 +9,7 @@
       <?php
 
       if (isset($_SESSION['user']) && $_SESSION['user'] == true) {
-            echo "Bienvenue, " . $_SESSION['name'] . "!";
+            echo "Bienvenue, " . $_SESSION['surname'] . "!";
       } else {
             echo "Veuillez vous connecter pour accéder à cette page";
       }

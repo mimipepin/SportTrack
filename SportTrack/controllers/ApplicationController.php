@@ -11,7 +11,7 @@ class ApplicationController{
             'user_add' => ['controller'=>'AddUserController', 'view'=>'AddUserValidationView'],
             'user_connect' => ['controller'=> 'ConnectUserController','view'=> 'ConnectUserValidationView'],
             'user_disconnect' => ['controller'=> 'DisconnectUserController' ,'view'=> 'DisconnectUserVue'],
-            'upload_activity' => ['controller'=> 'UploadActivityController','view'=> null],
+            'upload_activity' => ['controller'=> 'UploadActivityController','view'=> 'importJSON'],
             'list_activities' => ['controller'=> 'ListActivityController','view'=> 'ListActivityView'],
             'user_connect_form'=>['controller'=>null, 'view'=>'ConnectUserForm'],
             'user_add_form'=>['controller'=> null, 'view' => 'AddUserForm'],

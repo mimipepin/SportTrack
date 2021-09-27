@@ -6,7 +6,7 @@ require __DIR__."/../model/CompteDAO.php";
 class AddUserController implements Controller {
       public function handle($request) {
             try {
-                  var_dump($request);
+                  //var_dump($request);
 
                   $compte = new Compte();
                   $compte->init(
@@ -22,7 +22,6 @@ class AddUserController implements Controller {
                   #if (null !== $DAO->findUser($request['email_addr'], $request['password'])){
                   if ($DAO->findUser($request['email_addr'], $request['password']) == null) {
                         $DAO->insert($compte);
-                        session_start();
                         $_SESSION['email_addr'] = $compte->getMail();
                         $_SESSION['user'] = $compte;
                         $_SESSION['name'] = $compte->getNom();

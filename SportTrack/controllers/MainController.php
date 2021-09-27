@@ -6,8 +6,8 @@ require __DIR__."/../model/CompteDAO.php";
 class MainController implements Controller{
 
     public function handle($request){
-            session_start();
-            #var_dump($_SESSION);
+            
+            
 		if (isset($_SESSION['user'])){
                   /*
 			$email = $_SESSION['email_addr'];
