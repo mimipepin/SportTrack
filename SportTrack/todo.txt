@@ -1,5 +1,0 @@
-not found ? peut etre soucis server planté donc ok
-la page de connexion qui a des problèmes mais peut etre soucis serv aussi
-
-verif les liens vers le serv pour l'iut
-css ok partout ?
